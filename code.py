@@ -9,5 +9,11 @@ def mergeLists(list1, list2):
 		    i += 1
 
 	print new_lst
+	for i in range(len(new_lst)):
+    		for j in range(i + 1, len(new_lst)):
+			if new_lst[i] > new_lst[j]:
+				new_lst[i], new_lst[j] = new_lst[j], new_lst[i]
+
+	print new_lst
 
 mergeLists([1,5,3], [2, 7,4])
